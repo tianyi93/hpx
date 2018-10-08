@@ -18,6 +18,10 @@ set(oversubscribing_resource_partitioner_PARAMETERS
     THREADS_PER_LOCALITY 4 "--use-pools" "--use-scheduler")
 set(simple_resource_partitioner_PARAMETERS
     THREADS_PER_LOCALITY 4 "--use-pools" "--use-scheduler")
+set(guided_pool_test_PARAMETERS
+    THREADS_PER_LOCALITY 4)
+set(async_customization_PARAMETERS
+    THREADS_PER_LOCALITY 4)
 
 foreach(example_program ${example_programs})
   set(sources
